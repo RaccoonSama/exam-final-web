@@ -1537,6 +1537,7 @@ La barre du millieu
 
 .line-2 article {
   border: 2px solid black;
+  transition: 1s ease;
 }
 
 .session-1 article, .session-2 article, .session-3 article {
