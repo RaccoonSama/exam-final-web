@@ -44,6 +44,13 @@
                     precedent = ".Spécifique";
                     resetCouleur(precedent);
                 }
+                if (elem.className == "Conception") {
+                    elem.style.backgroundColor = "#99ffcc";
+                }
+                else{
+                    precedent = ".Conception";
+                    resetCouleur(precedent);
+                }
                 
               
             }
@@ -56,7 +63,7 @@
         var classes = document.querySelectorAll(c);
 
         for (const classe of classes ) {
-            classe.style.backgroundColor = "white";
+            classe.style.backgroundColor = "lightblue";
         }
     }
     
