@@ -1,0 +1,51 @@
+.session-e, .session-5:first-of-type{
+    display: none !important;
+}
+.line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.line-2{
+   width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5%;
+    article {
+        border: 2px solid black;
+    }
+}
+
+.session-1, .session-2, .session-3{
+        
+    article {
+        width: 25%;
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.session-4, .session-5{
+    article {
+        width: 20%;
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.session-6 {
+    article {
+        
+        width: 50%;
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

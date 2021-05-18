@@ -38,13 +38,16 @@ get_header();
 					if($tPropriété['session'] != $precedentCours) :
 						if("X" != $precedentCours) :
 				?>
+				</div>
 			</section>
 			<?php
 					endif;
 					
 				?>
 
-				<section class="<?= $tPropriété['session'] ?>">
+				<section class="line <?= "session-" . $tPropriété['session'] ?>">
+				<h1 class="no-session"><?php echo $tPropriété['session']; ?></h1>
+				<div class="line-2">
 				<?php
 				$precedentCours = $tPropriété['session'];
 					endif;

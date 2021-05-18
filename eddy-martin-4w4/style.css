@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
 Theme Name: eddy-martin-4w4
 Theme URI: http://underscores.me/
@@ -664,60 +663,6 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.site {
-  display: grid;
-  /* Il faut régler les proportions avec deux pourcentages */
-  grid-template-columns: 100%;
-  grid-template-areas: "header header" "main main" "sidebar sidebar" "footer footer";
-}
-
-@media (min-width: 1200px) {
-  .site {
-    grid-template-columns: 80% 20%;
-    grid-template-areas: "header header" "main sidebar" "footer footer";
-  }
-}
-
-.site-header {
-  grid-area: header;
-  height: 25vh;
-}
-
-.site-main {
-  grid-area: main;
-  overflow: hidden;
-  /* Resolves issue with <pre> elements forcing full width. */
-}
-
-.widget-area {
-  grid-area: sidebar;
-  background-color: #eee;
-}
-
-.site-footer {
-  grid-area: footer;
-}
-
-.no-sidebar .site {
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "header" "main" "footer";
-}
-
-/*
-#page .site (conteneur de la page)
-	#masthead  .site-header (entete de la page)
-		.site-branding
-			.site-title
-			.site-description
-		#site-nagigation .main-navigation	
-	#primary .site-main (section principale de la page)
-	#colophon .site-footer	
-*/
-.site-branding, #primary, #colophon {
-  margin-left: 3rem;
-}
-
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -1570,7 +1515,50 @@ La barre du millieu
 
 /* local sidebar
 --------------------------------------------- */
-#secondary {
-  padding-left: 8%;
+/* local sidebar
+--------------------------------------------- */
+.session-e, .session-5:first-of-type {
+  display: none !important;
 }
-/*# sourceMappingURL=style.css.map */
+
+.line {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.line-2 {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 5%;
+}
+
+.line-2 article {
+  border: 2px solid black;
+}
+
+.session-1 article, .session-2 article, .session-3 article {
+  width: 25%;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.session-4 article, .session-5 article {
+  width: 20%;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.session-6 article {
+  width: 50%;
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
